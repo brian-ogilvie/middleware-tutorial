@@ -2,17 +2,22 @@
   "name": "middleware-tutorial",
   "version": "1.0.0",
   "description": "Clean up your server routes using validation middleware",
-  "main": "index.js",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brian-ogilvie/middleware-tutorial"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "author": "Brian Ogilvie",
   "license": "ISC",
   "dependencies": {
     "@hapi/joi": "^16.1.7",
     "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "morgan": "^1.9.1"
   },
