@@ -2,7 +2,7 @@ const users = [
   {
     id: '12345',
     firstname: 'Cool',
-    lastname: 'Guy',
+    lastname: 'Dev',
   },
 ];
 
