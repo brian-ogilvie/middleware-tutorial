@@ -1,5 +1,5 @@
 function serverError(err, req, res) {
-  // log the error
+  // log the error with logging service
   // alert tech support
   res.status(500).json({ error: err.message });
 }
