@@ -40,6 +40,15 @@ function getSingleProduct(req, res, next) {
 function updateProduct(req, res, next) {
   try {
     const { productId } = req.params;
+    const { id: userId } = req.user;
+    const product = Product.findWhere({
+      id: productId,
+      user_id: userId,
+    });
+    if (!product) {
+      res.status(400).json({ error: 'No such product' });
+      return;
+    }
     const updated = Product.update(productId, req.body);
     res.status(200).json(updated);
   } catch (e) {

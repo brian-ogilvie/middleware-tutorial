@@ -4,10 +4,17 @@ const items = [
   {
     id: '8765432',
     user_id: '12345',
-    name: 'Supercharger Widget',
+    title: 'Supercharger Widget',
     description:
       "Probably the most important purchase you'll ever make. Supercharge your life!",
     price: 99,
+  },
+  {
+    id: 'd563o49',
+    user_id: '12346',
+    title: 'Kyber Crystalt',
+    description: "It's real. Trust us",
+    price: 1009,
   },
 ];
 
@@ -28,6 +35,15 @@ class Product {
 
   static findById(productId) {
     const product = items.find(({ id }) => id === productId);
+    return product;
+  }
+
+  static findWhere(queryObj) {
+    const product = items.find(item => {
+      return Object.keys(queryObj).every(key => {
+        return queryObj[key] === item[key];
+      });
+    });
     return product;
   }
 
