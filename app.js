@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 const authHandler = require('./handlers/authHandler');
 const productsHandler = require('./handlers/productsHandler');
-const productsValidator = require('./middlewards/validation/products');
+const productsValidator = require('./middlewards/validation/productsValidator');
 
 const PORT = process.env.PORT || 3000;
 

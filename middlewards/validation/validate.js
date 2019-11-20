@@ -8,4 +8,4 @@ function validate(schema, target, res, next) {
   next();
 }
 
-module.expprts = validate;
+module.exports = validate;
