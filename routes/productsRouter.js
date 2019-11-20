@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const productsHandler = require('../handlers/productsHandler');
-const productsValidator = require('../middlewards/validation/productsValidator');
+const productsValidator = require('../middlewares/validation/productsValidator');
 const { serverError } = require('../handlers/errorHandler');
 
 const productsRouter = Router();
