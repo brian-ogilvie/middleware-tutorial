@@ -27,3 +27,5 @@ productsRouter.put(
 );
 
 productsRouter.use(serverError);
+
+module.exports = productsRouter;

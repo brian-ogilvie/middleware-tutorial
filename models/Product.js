@@ -10,11 +10,11 @@ const items = [
     price: 99,
   },
   {
-    id: 'd563o49',
+    id: 'd563049',
     user_id: '12346',
-    title: 'Kyber Crystalt',
-    description: "It's real. Trust us",
-    price: 1009,
+    title: 'Kyber Crystal',
+    description: "It's real. Trust us.",
+    price: 1000,
   },
 ];
 
