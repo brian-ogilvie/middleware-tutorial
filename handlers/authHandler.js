@@ -1,4 +1,4 @@
-const User = require('../data/User');
+const User = require('../models/User');
 
 function authHandler(req, res, next) {
   req.user = User.getCurrentUser();
